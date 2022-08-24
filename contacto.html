@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 3 - 6</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logowebstudio" href="index.html">WebStudio</a>
+      <nav>
+        <a class="linkheader" href="">Estudio</a>
+        <a class="linkheader" href="portafolio.html">Portafolio</a>
+        <a class="linkheader" href="contacto.html">Сontactos</a>
+      </nav>
+      <div class="contact">
+        <svg class="icon-mail2">
+          <use href="icons/icons.svg#icon-mail2"></use>
+        </svg>
+        <a class="linkemail" href="malito:carlosandrescas@gmail.com"
+          >carlosandrescas@gmail.com</a
+        >
+        <span class="celnumber">+57-3172802706</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="formcontact">
+        <form class="form" name="contacto" autocomplete="off">
+          <span class="formtitulo"
+            >Deje sus datos, nos contactaremos con usted</span
+          >
+          <div class="formfield">
+            <label for="nombre" class="labelform"> Nombre</label>
+            <input class="form-input" name="nombre" type="text" />
+          </div>
+
+          <div class="formfield">
+            <label for="telefono" class="labelform"> Telefono</label>
+            <input class="form-input" name="telefono" type="text" />
+          </div>
+          <div class="formfield">
+            <label for="correo" class="labelform"> E-mail</label>
+            <input class="form-input" name="correo" type="email" />
+          </div>
+
+          <div class="formfield">
+            <label for="Mensaje" class="labelform">Mensaje</label>
+            <textarea
+              class="form-text"
+              id="comentarios"
+              name="comentarios"
+            ></textarea>
+          </div>
+
+          <div class="terminos">
+            <input
+              type="checkbox"
+              name="terminos"
+              class="chkterminos"
+              required
+            />
+            <p class="termtext">
+              Estoy de acuerdo con el boletín informativo y acepto los Términos
+              y Condiciones
+            </p>
+          </div>
+
+          <button class="send" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contacfooter">
+        <a class="logowebstudio" href="">WebStudio</a>
+        <address>Via el Rosario km2 - 754</address>
+        <a class="linkemail" href="malito:carlosandrescas@gmail.com"
+          >carlosandrescas@gmail.com</a
+        >
+        <span class="celnumber">+57-3172802706</span>
+      </div>
+
+      <div class="redesfooter">
+        <span>ENCUENTRANOS EN</span>
+
+        <div class="iconredesfooter">
+          <div class="iconrcf">
+            <svg class="icon-instagram">
+              <use href="icons/icons.svg#icon-instagram"></use>
+            </svg>
+          </div>
+
+          <div class="iconrcf">
+            <svg class="icon-twitter">
+              <use href="icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </div>
+
+          <div class="iconrcf">
+            <svg class="icon-facebook">
+              <use href="icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
+
+          <div class="iconrcf">
+            <svg class="icon-linkedin">
+              <use href="icons/icons.svg#icon-linkedin2"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="suscription">
+        <div>SUSCRÍBASE al boletín informativo</div>
+        <form action="suscription">
+          <div class="suscription-correo">
+            <input
+              class="form-correo"
+              name="nombre"
+              type="email"
+              placeholder="Correo electrónico*"
+              required
+            />
+            <button class="suscriptionbutton" type="submit">Suscríbase</button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
