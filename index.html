@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarea 3 - 6</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+    rel="stylesheet"
+    href="node_modules/modern-normalize/modern-normalize.css"
+  />
   </head>
   <body>
     <header class="header">
       <a class="logowebstudio" href="index.html">WebStudio</a>
       <nav>
-        <a class="linkheader" href="">Estudio</a>
+        <a class="linknavestudio" href="index.html">Estudio</a>
         <a class="linkheader" href="portafolio.html">Portafolio</a>
         <a class="linkheader" href="contacto.html">Сontactos</a>
       </nav>
-      <div class="contact">
-        <svg class="icon-mail2">
-          <use href="icons/icons.svg#icon-mail2"></use>
-        </svg>
-        <a class="linkemail" href="malito:carlosandrescas@gmail.com"
-          >carlosandrescas@gmail.com</a
-        >
-        <span class="celnumber">+57-3172802706</span>
+      <div class="contactHeader">
+        <div class="contact">
+          <svg class="icon-contact-mail">
+            <use href="icons/icons.svg#icon-mail2"></use>
+          </svg>
+          <a class="linkemail" href="malito:carlosandrescas@gmail.com"
+            >carlosandrescas@gmail.com</a
+          >
+        </div>
+        <div class="contact">
+          <svg class="icon-contact-cel">
+            <use href="icons/icons.svg#icon-mobile"></use>
+          </svg>
+          <span class="celnumber">+57-3172802706</span>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="solution">
-        <span
-          >SOLUCIONES EFICACES PARA <br />
-          SU NEGOCIO</span
-        >
+        <h1>
+          SOLUCIONES EFICACES PARA <br />
+          SU NEGOCIO
+        </h1>
         <button class="buttonsolution" type="button">
           Solicite nuestro servicio
         </button>
@@ -102,22 +114,26 @@
 
       <section class="work">
         <h2>A qué nos dedicamos</h2>
-        <div>
-          <img
-            class="imgwork"
-            src="images/imagen1.jpg"
-            alt="imagen persona digitando"
-          />
-          <img
-            class="imgwork"
-            src="images/imagen2.jpg"
-            alt="imagen persona Celular en Mano"
-          />
-          <img
-            class="imgwork"
-            src="images/imagen3.jpg"
-            alt="imagen persona tablet en Mano"
-          />
+        <div class="dowork">
+          <div class="doworkItem">
+            <img
+              class="imgwork"  src="images/imagen1.jpg"  alt="imagen persona digitando"
+            />
+            <span class="doworktext">APLICACIONES DE ESCRITORIO</span>
+          </div>
+          <div class="doworkItem">
+            <img
+              class="imgwork" src="images/imagen2.jpg"   alt="imagen persona Celular en Mano"
+            />
+            <span class="doworktext">APLICACIONES MÓVILES</span>
+          </div>
+
+          <div class="doworkItem">
+            <img
+              class="imgwork" src="images/imagen3.jpg" alt="imagen persona tablet en Mano"
+            />
+            <span class="doworktext">SOLUCIONES DE DISEÑO</span>
+          </div>
         </div>
       </section>
 
@@ -311,65 +327,62 @@
           </div>
         </div>
       </section>
+    </main>
+    <footer>
+      <div class="contacfooter">
+        <a class="logowebstudio" href="">WebStudio</a>
+        <address>Via el Rosario km2 - 754</address>
+        <a class="linkemail" href="malito:carlosandrescas@gmail.com"
+          >carlosandrescas@gmail.com</a
+        >
+        <span class="celnumber">+57-3172802706</span>
+      </div>
 
-      <footer>
-        <div class="contacfooter">
-          <a class="logowebstudio" href="">WebStudio</a>
-          <address>Via el Rosario km2 - 754</address>
-          <a class="linkemail" href="malito:carlosandrescas@gmail.com"
-            >carlosandrescas@gmail.com</a
-          >
-          <span class="celnumber">+57-3172802706</span>
-        </div>
+      <div class="redesfooter">
+        <span>ENCUENTRANOS EN</span>
 
-        <div class="redesfooter">
-          <span>ENCUENTRANOS EN</span>
+        <div class="iconredesfooter">
+          <div class="iconrcf">
+            <svg class="icon-instagram">
+              <use href="icons/icons.svg#icon-instagram"></use>
+            </svg>
+          </div>
 
-          <div class="iconredesfooter">
-            <div class="iconrcf">
-              <svg class="icon-instagram">
-                <use href="icons/icons.svg#icon-instagram"></use>
-              </svg>
-            </div>
+          <div class="iconrcf">
+            <svg class="icon-twitter">
+              <use href="icons/icons.svg#icon-twitter"></use>
+            </svg>
+          </div>
 
-            <div class="iconrcf">
-              <svg class="icon-twitter">
-                <use href="icons/icons.svg#icon-twitter"></use>
-              </svg>
-            </div>
+          <div class="iconrcf">
+            <svg class="icon-facebook">
+              <use href="icons/icons.svg#icon-facebook"></use>
+            </svg>
+          </div>
 
-            <div class="iconrcf">
-              <svg class="icon-facebook">
-                <use href="icons/icons.svg#icon-facebook"></use>
-              </svg>
-            </div>
-
-            <div class="iconrcf">
-              <svg class="icon-linkedin">
-                <use href="icons/icons.svg#icon-linkedin2"></use>
-              </svg>
-            </div>
+          <div class="iconrcf">
+            <svg class="icon-linkedin">
+              <use href="icons/icons.svg#icon-linkedin2"></use>
+            </svg>
           </div>
         </div>
+      </div>
 
-        <div class="suscription">
-          <div>SUSCRÍBASE al boletín informativo</div>
-          <form action="suscription">
-            <div class="suscription-correo">
-              <input
-                class="form-correo"
-                name="nombre"
-                type="email"
-                placeholder="Correo electrónico*"
-                required
-              />
-              <button class="suscriptionbutton" type="submit">
-                Suscríbase
-              </button>
-            </div>
-          </form>
-        </div>
-      </footer>
-    </main>
+      <div class="suscription">
+        <div>SUSCRÍBASE al boletín informativo</div>
+        <form action="suscription">
+          <div class="suscription-correo">
+            <input
+              class="form-correo"
+              name="nombre"
+              type="email"
+              placeholder="Correo electrónico*"
+              required
+            />
+            <button class="suscriptionbutton" type="submit">Suscríbase</button>
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>

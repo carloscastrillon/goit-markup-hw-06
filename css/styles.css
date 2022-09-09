@@ -40,6 +40,23 @@ body {
   color: var(--blue-color);
 }
 
+.linknavestudio:hover {
+  color: var(--blue-color);
+}
+
+.linknavestudio:hover:after {
+  content: "__________";
+  color: var(--blue-color);
+}
+
+.contact {
+  padding-right: 30px;
+}
+
+.contactHeader {
+  display: flex;
+}
+
 .contact > .linkemail {
   color: var(--gray-color);
 }
@@ -49,27 +66,33 @@ body {
   cursor: pointer;
 }
 
-.celnumber:hover {
+.contact:hover > .linkemail {
   color: var(--blue-color);
 }
 
-.linkemail:hover {
+.contact:hover > .icon-contact-mail {
+  fill: var(--blue-color);
+}
+
+.contact:hover > .celnumber {
   color: var(--blue-color);
 }
 
-.icon-mail2 {
+.contact:hover > .icon-contact-cel {
+  fill: var(--blue-color);
+}
+
+.icon-contact-cel,
+.icon-contact-mail {
   width: 16px;
   height: 12px;
   fill: #afb1b8;
 }
 
-.icon-mail2:hover {
-  fill: var(--blue-color);
-}
-
 .linkheader,
 .logowebstudio,
-.linkemail {
+.linkemail,
+.linknavestudio {
   text-decoration: none;
 }
 
@@ -82,7 +105,7 @@ body {
   align-items: center;
 }
 
-.solution > span {
+.solution > h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -100,6 +123,7 @@ body {
   font-size: 16px;
   color: var(--white-color);
   cursor: pointer;
+  border: none;
 }
 
 .details {
@@ -107,6 +131,7 @@ body {
   padding-left: 215px;
   display: flex;
   justify-content: space-between;
+  width: 1200px;
 }
 
 .detaillogo {
@@ -156,16 +181,36 @@ body {
 .work {
   padding-right: 215px;
   padding-left: 215px;
+  margin-bottom: 94px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.imgwork {
+.dowork {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.doworkItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 370px;
   height: 294px;
-  margin: 5px;
+}
+
+.doworktext {
+  background: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  padding: 27px 79px;
+  top: -70px;
 }
 
 .ourteam {
@@ -179,6 +224,8 @@ body {
 
 .team {
   display: flex;
+  width: 1200px;
+  justify-content: space-between;
 }
 
 h2 {
@@ -195,17 +242,18 @@ h2 {
   border-radius: 0px 0px 4px 4px;
   width: 270px;
   height: 428px;
-  margin-left: 20px;
+  background-color: #fff;
 }
 
 .teammemberphoto {
   width: 270px;
-  height: 260px;
+  height: 310px;
 }
 
 .teammembername,
 .teammemberrol {
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .teammemberrol {
@@ -280,6 +328,8 @@ h2 {
 
 .clients {
   display: flex;
+  justify-content: space-between;
+  width: 1200px;
 }
 
 .logoclient {
@@ -287,7 +337,7 @@ h2 {
   height: 81px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  margin-right: 15px;
+
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -339,7 +389,6 @@ footer {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
-  margin-left: 10px;
 }
 
 .iconrcf > .icon-instagram {
@@ -379,7 +428,6 @@ footer {
   background: #2f303a;
   border-radius: 4px;
   color: #ffffff;
-  margin-right: 12px;
 }
 
 .suscriptionbutton {
@@ -397,11 +445,11 @@ footer {
 }
 
 .sectionbutton {
-  padding-right: 215px;
-  padding-left: 215px;
+  padding-right: 600px;
+  padding-left: 600px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 56px;
 }
@@ -414,8 +462,8 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  margin-left: 8px;
   cursor: pointer;
+  border: none;
 }
 
 .buttonportafolio:hover {
@@ -436,9 +484,12 @@ footer {
   height: 404px;
   background: var(--white-color);
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
   position: relative;
+}
+
+.projectinfo:hover{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projectsdetail {
@@ -452,7 +503,7 @@ footer {
   color: var(--gray-color);
   font-size: 16px;
 }
-/*++++++++++Animacion+++++++++++*/
+
 .animationtext {
   padding: 40px;
   font-weight: 400;
@@ -464,7 +515,8 @@ footer {
   height: 200px;
   display: none;
   position: absolute;
-  }
+}
+
 .projectinfo:hover > .animationtext {
   display: flex;
   animation-name: animacion;
@@ -478,7 +530,6 @@ footer {
     transform: translateY(0px);
   }
 }
-/*+++++++++++++++++++++++++++++++++++*/
 
 .form {
   display: flex;
